@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akuun Arquitectos - Transformando ideas en espacios únicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-full {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .navbar {
+            transition: all 0.3s ease;
+        }
+        .navbar.scrolled {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .project-card .overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .project-card:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto d-flex align-items-center" href="#inicio">
+                <img src="/Imagenes/Logo 2.png" alt="logo" width="150px" class="me-2">
+                <span class="fs-1 fw-bold">
+                    <span class="text-warning">Akuun</span>
+                    <span class="text-dark">Arquitectos</span>
+                </span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-3" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-4" href="/diseño.html">Diseño Arquitectónico</a></li>
+                            <li><a class="dropdown-item fs-4" href="/compraventa.html">CompraVenta</a></li>
+                            <li><a class="dropdown-item fs-4" href="/renta.html">Renta de Maquinaria</a></li>
+                            <li><a class="dropdown-item fs-4" href="/topografia.html">Topografía</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-3" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="section-full d-flex align-items-center" style="
+        background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(30, 30, 30, 0.9)), url('/Imagenes/Logo.png') center/cover no-repeat;">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Transformando ideas en espacios únicos
+                    </h1>
+                    <p class="lead mb-4 fs-4">
+                        En Akuun Arquitectos combinamos creatividad, tecnología y sostenibilidad para crear
+                        proyectos arquitectónicos que inspiran y perduran.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary btn-lg px-4 py-2 fs-5">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section-full py-5 bg-light">
+        <div class="container my-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-black text-dark">Nosotros</h1>
+                <div class="divider mx-auto bg-warning" style="height: 4px; width: 80px;"></div>
+            </div>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2 class="fw-black mb-4 text-warning">Quiénes Somos</h2>
+                    <p class="lead mb-4">
+                        Somos un despacho arquitectónico apasionado por el diseño y la innovación, dedicado a transformar ideas en espacios únicos que reflejan funcionalidad, estética y sostenibilidad.
+                    </p>
+                    <p>
+                        En Akuun, creemos que la arquitectura es más que construir; es crear experiencias, emociones y entornos que mejoren la vida de las personas y generen impacto positivo en la sociedad.
+                    </p>
+                    <p>
+                        Con un equipo multidisciplinario de profesionales comprometidos con la excelencia, combinamos creatividad, tecnología avanzada y un enfoque personalizado para desarrollar proyectos residenciales, comerciales y urbanos que se adaptan a las necesidades específicas de cada cliente.
+                    </p>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="ps-lg-4">
+                        <img src="/imagenes/8576830717111024810.0.jpg" alt="Equipo Akuun Arquitectos" class="img-fluid rounded shadow-lg" style="max-height: 600px; width: 100%; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="fw-black mb-4 text-warning">Misión</h3>
+                            <blockquote class="mb-0">
+                                <p class="font-italic">
+                                    "En Akuun Arquitectos, nuestra misión es transformar ideas en espacios únicos que armonicen funcionalidad, estética y sostenibilidad. Nos comprometemos a diseñar y construir soluciones arquitectónicas innovadoras que respondan a las necesidades de nuestros clientes, promoviendo el bienestar y enriqueciendo la calidad de vida. Inspirados en la creatividad y la excelencia, trabajamos con responsabilidad social y ambiental para dejar una huella positiva en cada proyecto."
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="fw-black mb-4 text-warning">Visión</h3>
+                            <blockquote class="mb-0">
+                                <p class="font-italic">
+                                    "Ser reconocidos como un despacho arquitectónico líder a nivel nacional e internacional, destacado por su innovación, compromiso con la sostenibilidad y capacidad para crear espacios técnicos que trasciendan generaciones. Aspiramos a ser referentes en el mercado de diseño y construcción, ofreciendo soluciones exclusivas que combinen arte, funcionalidad y responsabilidad ambiental."
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section-full py-5 bg-white">
+        <div class="container my-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Nuestros Servicios</h1>
+                <div class="mx-auto bg-warning" style="height: 4px; width: 80px;"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="/diseño.html" class="card h-100 text-decoration-none border">
+                        <div class="card-body text-center p-4">
+                            <img src="/Imagenes/diseño.jpg" alt="Diseño" class="img-fluid mb-4" width="80">
+                            <h3 class="h4 fw-bold mb-3">Diseño Arquitectónico</h3>
+                            <p class="text-muted">Creación de proyectos arquitectónicos innovadores y funcionales.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <a href="/compraventa.html" class="card h-100 text-decoration-none border">
+                        <div class="card-body text-center p-4">
+                            <img src="/Imagenes/compraventa.png" alt="Compra-Venta" class="img-fluid mb-4" width="80">
+                            <h3 class="h4 fw-bold mb-3">Compra-Venta</h3>
+                            <p class="text-muted">Asesoría especializada en adquisición y venta de propiedades.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <a href="/renta.html" class="card h-100 text-decoration-none border">
+                        <div class="card-body text-center p-4">
+                            <img src="/Imagenes/renta.png" alt="Renta" class="img-fluid mb-4" width="80">
+                            <h3 class="h4 fw-bold mb-3">Renta</h3>
+                            <p class="text-muted">Gestión profesional de maquinarias en renta.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <a href="/topografia.html" class="card h-100 text-decoration-none border">
+                        <div class="card-body text-center p-4">
+                            <img src="/Imagenes/topografia.png" alt="Topografía" class="img-fluid mb-4" width="80">
+                            <h3 class="h4 fw-bold mb-3">Topografía</h3>
+                            <p class="text-muted">Servicios topográficos profesionales para construcción.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="section-full py-5 bg-light">
+        <div class="container my-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Portafolio</h1>
+                <div class="mx-auto bg-warning" style="height: 4px; width: 80px;"></div>
+                <p class="lead mt-3">Algunos de nuestros proyectos destacados</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100 overflow-hidden project-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="/imagenes/WhatsApp Image 2025-05-02 at 1.45.34 PM (1).jpeg" class="card-img-top img-fluid w-100" alt="Residencia GA" style="height: 250px; object-fit: cover;">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex align-items-center overlay">
+                                <div class="p-3 text-white">
+                                    <h3 class="h5">Residencia GA</h3>
+                                    <p class="small">Diseño y construcción de vivienda unifamiliar con integración al paisaje natural.</p>
+                                    <ul class="list-unstyled small">
+                                        <li><strong>Ubicación:</strong> Yahualica Jal.</li>
+                                        <li><strong>Año:</strong> 2021</li>
+                                        <li><strong>Superficie:</strong> 280 m²</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title h5 mb-1">Residencia GA</h4>
+                            <p class="card-text text-muted small mb-0">Vivienda unifamiliar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100 overflow-hidden project-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="/Imagenes/WhatsApp Image 2025-05-02 at 1.45.33 PM.jpeg" class="card-img-top img-fluid w-100" alt="Edificio Zenith" style="height: 250px; object-fit: cover;">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex align-items-center overlay">
+                                <div class="p-3 text-white">
+                                    <h3 class="h5">Edificio AG </h3>
+                                    <p class="small">Complejo residencial de 8 departamentos con áreas comunes.</p>
+                                    <ul class="list-unstyled small">
+                                        <li><strong>Ubicación:</strong> Aguascalientes</li>
+                                        <li><strong>Año:</strong> 2025</li>
+                                        <li><strong>Superficie:</strong> 840 m²</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title h5 mb-1">Edificio Zenith</h4>
+                            <p class="card-text text-muted small mb-0">Residencial vertical</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm h-100 overflow-hidden project-card">
+                        <div class="position-relative overflow-hidden">
+                            <img src="/imagenes/WhatsApp Image 2025-05-02 at 1.45.34 PM.jpeg" class="card-img-top img-fluid w-100" alt="Casa del Bosque" style="height: 250px; object-fit: cover;">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex align-items-center overlay">
+                                <div class="p-3 text-white">
+                                    <h3 class="h5">Casa Santuario</h3>
+                                    <p class="small">Vivienda de fin de semana con integración total al terreno circundante.</p>
+                                    <ul class="list-unstyled small">
+                                        <li><strong>Ubicación:</strong> El santuario</li>
+                                        <li><strong>Año:</strong> 2019</li>
+                                        <li><strong>Superficie:</strong> 2000 m²</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title h5 mb-1">Casa del Bosque</h4>
+                            <p class="card-text text-muted small mb-0">Vivienda ecológica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary btn-lg">Ver más proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonio -->
+    <section id="testimonios" class="section-full py-5 bg-white">
+        <div class="container my-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Testimonios</h1>
+                <div class="mx-auto bg-warning" style="height: 4px; width: 80px;"></div>
+                <p class="lead mt-3">Lo que nuestros clientes dicen de nosotros</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                                </svg>
+                            </div>
+                            <p class="card-text fst-italic mb-4">"Trabajar con Akuun Arquitectos fue una experiencia excepcional. Entendieron perfectamente nuestra visión y la superaron con un diseño que combina belleza y funcionalidad."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Ana Alfaro</h5>
+                                    <p class="text-muted small mb-0">Casa Habitación</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                                </svg>
+                            </div>
+                            <p class="card-text fst-italic mb-4">"El equipo de Akuun demostró profesionalismo en cada etapa de nuestro proyecto departamental. Su atención al detalle y enfoque sostenible fueron clave para el éxito."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">José Gómez</h5>
+                                    <p class="text-muted small mb-0">Centro Departamental Multifamiliar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-4 text-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                                </svg>
+                            </div>
+                            <p class="card-text fst-italic mb-4">"Como desarrolladores, valoramos la creatividad y puntualidad de Akuun. Han sido estratégicos en nuestros proyectos."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="ms-3">
+                                    <h5 class="mb-1">Cindy Ibarra</h5>
+                                    <p class="text-muted small mb-0">Casa Habitación</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section-full py-5 bg-light">
+        <div class="container my-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Contacto</h1>
+                <div class="mx-auto bg-warning" style="height: 4px; width: 80px;"></div>
+                <p class="lead mt-3">Estamos listos para convertir tus ideas en realidad</p>
+            </div>
+            
+            <div class="row g-5">
+                <!-- Columna de Información -->
+                <div class="col-lg-6">
+                    <div class="pe-lg-4">
+                        <h3 class="h4 mb-4">Información de Contacto</h3>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="h6 mb-1">Dirección</h4>
+                                <p class="mb-0">Calle Pelícano #44, Yahualica, Jalisco</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58zM1.884.511a1.75 1.75 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="h6 mb-1">Teléfono</h4>
+                                <p class="mb-0">+52 449 224 19 60</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="h6 mb-1">Email</h4>
+                                <p class="mb-0">arq.marcolizardi@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="me-4 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="h6 mb-1">Horario</h4>
+                                <p class="mb-0">Lunes a Viernes: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                        
+                        <hr class="my-5">
+                        
+                        <div>
+                            <h3 class="h4 mb-4">Síguenos</h3>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.92 3.92 0 0 0-1.417.923A3.92 3.92 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.92 3.92 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.92 3.92 0 0 0-.923-1.417A3.92 3.92 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.436.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna de Formulario -->
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 p-lg-5 rounded shadow-sm">
+                        <h3 class="h4 mb-4">Envíanos un mensaje</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="servicio" class="form-label">Servicio de interés</label>
+                                <select class="form-select" id="servicio">
+                                    <option selected disabled>Selecciona un servicio</option>
+                                    <option value="diseño">Diseño Arquitectónico</option>
+                                    <option value="compraventa">Compra-Venta</option>
+                                    <option value="renta">Renta de Maquinaria</option>
+                                    <option value="topografia">Topografía</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="mensaje" class="form-label">Tu mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-2">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="/Imagenes/Logo 2.png" alt="logo" width="100" class="me-3">
+                        <div>
+                            <h3 class="h5 mb-0">Akuun Arquitectos</h3>
+                            <p class="small mb-0">Transformando ideas en espacios únicos</p>
+                        </div>
+                    </div>
+                    <p class="small">© 2025 Akuun Arquitectos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="h5 mb-3">Enlaces rápidos</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#portafolio" class="text-white text-decoration-none">Portafolio</a></li>
+                        <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="h5 mb-3">Contacto</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">Calle Pelícano #44, Yahualica, Jalisco</li>
+                        <li class="mb-2">+52 449 224 19 60</li>
+                        <li>arq.marcolizardi@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Activar el elemento activo del navbar al hacer scroll
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
